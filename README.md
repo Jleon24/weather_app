@@ -20,4 +20,6 @@
 # Sends request and gets JSON response
 # updates weather info in GUI
 
-#
+# The data is retreived from OpenWeatherMap API
+
+
