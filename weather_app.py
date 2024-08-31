@@ -37,10 +37,17 @@ def get_weather():
     else:
         # warning if the user entered non city name
         messagebox.showwarning("Input Required", "Please enter a city name.")
-
+def show_info():
+    # information display
+    messagebox.showinfo("Information", "PM Accelerator to Empower product managers at all levels")
+    
 # GUI setup using tkinter
 root = tk.Tk()
 root.title("Weather App")
+
+# author
+author_label = tk.Label(root, text="Created by Joshua Leon", font=("monospace", 10))
+author_label.pack(pady=5)
 
 # create city label
 city_label = tk.Label(root, text="Enter City:")
@@ -53,6 +60,11 @@ city_entry.pack(pady=5)
 # Button to get weather
 get_weather_btn = tk.Button(root, text="Get Weather", command=get_weather)
 get_weather_btn.pack(pady=10)
+
+# information button
+info_btn = tk.Button(root, text="Info", command=show_info)
+info_btn.pack(pady=10)
+
 
 # Label for weather result
 weather_label = tk.Label(root, text="", font=("Courier New", 12))
