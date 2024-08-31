@@ -55,7 +55,7 @@ get_weather_btn = tk.Button(root, text="Get Weather", command=get_weather)
 get_weather_btn.pack(pady=10)
 
 # Label for weather result
-weather_label = tk.Label(root, text="", font=("Arial", 12))
+weather_label = tk.Label(root, text="", font=("Courier New", 12))
 weather_label.pack(pady=20)
 
 # Run
